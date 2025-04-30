@@ -31,6 +31,8 @@ dependencies:
   flutter:
     sdk: flutter
 
+  smooth_page_indicator: ^1.2.1
+  get: ^4.7.2
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
@@ -39,6 +41,8 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  get: ^4.7.2
+
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
@@ -46,8 +50,16 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
 
+  flutter_native_splash: ^2.4.6
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/splash.png
+  android: true
+  ios: true
+
 
 # The following section is specific to Flutter packages.
 flutter:
@@ -57,6 +69,15 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
+  fonts:
+    - family: Airbnb
+      fonts:
+        - asset: assets/fonts/AirbnbCereal_W_Bk.otf
+          weight: 400
+        - asset: assets/fonts/AirbnbCereal_W_Md.otf
+          weight: 500
+  assets:
+    - assets/images/
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
